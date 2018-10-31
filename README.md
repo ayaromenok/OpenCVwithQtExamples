@@ -1,0 +1,2 @@
+# OpenCVwithQtSamples
+OpenCVwithQtSamples
