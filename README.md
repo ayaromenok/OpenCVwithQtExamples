@@ -1,2 +1,3 @@
-# OpenCVwithQtSamples
-OpenCVwithQtSamples
+# OpenCVwithQtExamples
+
+- QtQuick
