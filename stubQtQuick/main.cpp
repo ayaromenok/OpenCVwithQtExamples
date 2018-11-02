@@ -7,7 +7,7 @@
 #include <QGuiApplication>
 #endif  // CVQT_DEBUG_HIGHGUI
 #include <QQmlApplicationEngine>
-#include "../share.h"
+#include "../cvqt/share.h"
 #include "qcvobject.h"
 
 int main(int argc, char *argv[])

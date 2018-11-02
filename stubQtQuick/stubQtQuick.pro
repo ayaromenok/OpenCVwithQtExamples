@@ -5,7 +5,7 @@ CONFIG += c++11
 
 DEFINES += QT_DEPRECATED_WARNINGS
 
-include(../opencv.pri)
+include(../cvqt/opencv.pri)
 
 HEADERS += \
     qcvobject.h

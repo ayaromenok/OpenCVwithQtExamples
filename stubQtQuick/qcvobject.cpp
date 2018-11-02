@@ -2,7 +2,7 @@
 // MIT License - https://github.com/ayaromenok/OpenCVwithQtExamples/blob/master/LICENSE
 
 #include "qcvobject.h"
-#include "../share.h"
+#include "../cvqt/share.h"
 
 #include <opencv2/opencv.hpp>
 #include <QImage>
