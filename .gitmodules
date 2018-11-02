@@ -1,3 +1,6 @@
 [submodule "data"]
 	path = data
 	url = git@github.com:ayaromenok/OpenCVwithQtData.git
+[submodule "cvqt"]
+	path = cvqt
+	url = git@github.com:ayaromenok/OpenCVwithQt.git
