@@ -1,14 +1,12 @@
 // Copyright(C) 2018 Andrey Yaromenok, ayaromenok@gmail.com
 // MIT License - https://github.com/ayaromenok/OpenCVwithQtExamples/blob/master/LICENSE
 
-#ifdef  CVQT_DEBUG_HIGHGUI
-#include <QApplication>
-#else   // CVQT_DEBUG_HIGHGUI
 #include <QGuiApplication>
-#endif  // CVQT_DEBUG_HIGHGUI
 #include <QQmlApplicationEngine>
+#include <QQuickStyle>
 #include "../cvqt/share.h"
 #include "qcvobject.h"
+
 
 int main(int argc, char *argv[])
 {
@@ -18,12 +16,10 @@ int main(int argc, char *argv[])
 
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
-
-#ifdef  CVQT_DEBUG_HIGHGUI
-    QApplication app(argc, argv);
-#else   // CVQT_DEBUG_HIGHGUI
     QGuiApplication app(argc, argv);
-#endif  // CVQT_DEBUG_HIGHGUI
+
+    QQuickStyle::setStyle("Material");
+    QQuickStyle::setFallbackStyle("Default");
 
     qmlRegisterType<QCvObject> ("CvObject", 1, 0, "CvObject");
 
